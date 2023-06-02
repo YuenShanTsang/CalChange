@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CC.MainPage">
+
+    <StackLayout
+        Padding="20">
+
+        <!-- Price Label -->
+        <Label
+            Text="Price:"
+            FontSize="25" />
+
+        <!-- Price Entry -->
+        <Entry
+            x:Name="PriceEntry"
+            Keyboard="Numeric"
+            Placeholder="Enter price"
+            FontSize="25"/>
+
+        <!-- Money Given Label -->
+        <Label
+            Text="Money Given:"
+            FontSize="25" />
+
+        <!-- Money Given Entry -->
+        <Entry
+            x:Name="MoneyGivenEntry"
+            Keyboard="Numeric"
+            Placeholder="Enter money given"
+            FontSize="25"/>
+
+        <!-- Calculate Change Image Button -->
+        <ImageButton
+            Source="calculate_icon.png"
+            Clicked="CalculateChangeButton_Clicked"
+            HeightRequest="130"
+            WidthRequest="130" />
+
+        <!-- Change Label -->
+        <Label
+            x:Name="ChangeLabel"
+            Text=""
+            FontSize="25" />
+    </StackLayout>
+
+</ContentPage>
